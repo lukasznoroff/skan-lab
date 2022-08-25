@@ -7,7 +7,12 @@ import photo6 from "./images/photo6.jpg";
 import photo7 from "./images/photo7.jpg";
 import photo8 from "./images/photo8.jpg";
 import photo9 from "./images/photo9.jpg";
-import Skanning from "./components/Skanning";
+
+import Piotr from "./images/Piotr.png";
+import Rune from "./images/Rune.png";
+import Adam from "./images/Adam.png";
+import Dorota from "./images/Dorota.jpg";
+import Wojciech from "./images/Wojciech.jpg";
 
 
 export const container = [
@@ -73,6 +78,52 @@ export const container = [
         link: "/tjenester/Landskap"
 
     }
+]
 
-
+export const team = [
+    {
+        id: 1,
+        img: Piotr,
+        text1: "Oppmålingsingeniør",
+        text2: "Daglig leder",
+        text3: "Medeier",
+        phone: "+47 966 74 011",
+        email: "piotr@skan-lab.no"
+    },
+    {
+        id: 1,
+        img: Rune,
+        text1: "3D-skanning",
+        text2: "Databehandler",
+        text3: "Medeier",
+        phone: "+47 997 10 578",
+        email: "rune@skan-lab.no"
+    },
+    {
+        id: 1,
+        img: Adam,
+        text1: "Landskapsarkitekt MNLA",
+        text2: "BIM-koordinator, Databehandler",
+        text3: "Medeier",
+        phone: "+47 942 05 109",
+        email: "adam@skan-lab.no"
+    },
+    {
+        id: 1,
+        img: Dorota,
+        text1: "Arkitekt",
+        text2: "BIM Manager",
+        text3: "Partner",
+        phone: "+48 606 257 060",
+        email: "partners@skan-lab.no"
+    },
+    {
+        id: 1,
+        img: Wojciech,
+        text1: "Arkitekt",
+        text2: "BIM Manager",
+        text3: "Partner",
+        phone: "+48 602 717 337",
+        email: "partners@skan-lab.no"
+    }
 ]
