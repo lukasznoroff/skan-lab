@@ -45,7 +45,6 @@ const StyledNavbar = styled.div`
   right: 0;
   z-index: 999;
   margin: 0 auto;
-
   img {
     width: 100px;
     height: 100px;
