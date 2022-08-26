@@ -7,7 +7,7 @@ const OmOss = () => {
             <div className="container">
                 {team.map((item) => {
                     return (
-                        <div className="container-item">
+                        <div className="container-item" key={item.id}>
                             <div className="item-wrapper">
                                 <img src={item.img} alt={item.text1}/>
                                 <ul className="item-text">
@@ -35,15 +35,26 @@ const Wrapper = styled.div`
   position: absolute;
   top: 10%;
 
+  @media (max-width: 768px) {
+    top: 20%;
+  }
+
   .container {
     display: flex;
     height: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 130%;
+    }
   }
 
   .container-item {
     display: flex;
     align-items: center;
     width: 90vw;
+
   }
 
   .item-wrapper {

@@ -1,6 +1,5 @@
 import {container} from "../data";
 import styled from "styled-components";
-import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 
 const GridContainer = () => {
@@ -9,11 +8,11 @@ const GridContainer = () => {
             <GridWrapper>
                 {container.map((item) => {
                     return (
-                        <div className="grid-item">
+                        <div className="grid-item" key={item.id}>
                             <img src={item.img} alt={item.title}/>
                             <div className="text-item-wrapper">
                                 <p className="text-item">{item.title}</p>
-                                <div className="button-wrapper">
+                                <div className="button-wrapper" onClick={()=>window.scrollTo(0, 0)}>
                                     <Link to={item.link} className="btn">vis mer</Link>
                                 </div>
                             </div>
@@ -21,7 +20,6 @@ const GridContainer = () => {
                     )
                 })
                 }
-
 
             </GridWrapper>
         </div>
@@ -35,29 +33,21 @@ const GridWrapper = styled.div`
   height: 89vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 5px;
   position: absolute;
   top: 11%;
 
+  @media (max-width: 768px) {
+    top: 20%;
+  }
+  
   .grid-item {
-    //position: relative;
-
     position: relative;
     display: inline-block;
     overflow: hidden;
     max-width: 100%;
     height: auto;
-
-
-    //&:after {
-    //content: "";
-    //opacity: 0;
-    //position: absolute;
-    ////left: 0;
-    ////top: 0;
-    //width: 100%;
-    //height: 100%;
-    //}
 
     :before {
       opacity: 0;
@@ -76,26 +66,18 @@ const GridWrapper = styled.div`
       margin-top: -9px;
     }
 
-
     img {
       width: 100%;
-      //background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .3), rgba(0, 0, 0, .75));
-      //transition: opacity .25s ease-in-out .05s;
       height: 100%;
       object-fit: cover;
-
-      //&:hover {
-      //  opacity: 0.4;
-      //}
     }
 
-    //.text-item {
-    //  position: absolute;
-    //  left: 0;
-    //  top: 0;
-    //  opacity: 0;
-    //
-    //}
+    @media (max-width: 768px) {
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      height: 50vh;
+    }
   }
 
   .text-item-wrapper {
@@ -128,7 +110,6 @@ const GridWrapper = styled.div`
           //opacity: 0;
           transition: opacity .3s ease-in .15s;
         }
-
       }
     }
   }
@@ -142,7 +123,6 @@ const GridWrapper = styled.div`
     bottom: 0;
     width: 100%;
     height: 100%;
-    //background: rgba(0, 0, 0, 0.6);
     background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .3), rgba(0, 0, 0, .75));
     color: #fff;
     padding: 45px;
@@ -159,16 +139,3 @@ const GridWrapper = styled.div`
   }
 `;
 
-// const Grid = styled.div`
-//   display: grid;
-//   margin: 0 auto;
-//   display: grid;
-//   grid-template-columns: repeat(3,1fr);
-//   grid-gap: 5px;
-//   img{
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//
-//   }
-// `;

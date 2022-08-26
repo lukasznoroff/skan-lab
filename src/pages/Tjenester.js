@@ -23,31 +23,23 @@ const Tjenester = () => {
 export default Tjenester;
 
 const Container = styled.div`
-  //background-color: #333;
-  //width: 100vw;
-  //height: 100vh;
-  //position: relative;
-
   .sub-link-menu {
     z-index: 999;
     position: absolute;
-    //left: 70%;
-    //right: 7vh;
-    //right: calc(7vh - 3px);
-    
-    
-    //background-color: #9f9e9e;
     right: 5.88%;
     right: 3.5%;
     margin-right: 2.3vw;
-
-
     top: 5.5%;
     margin-top: 15px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      top: 10%;
+      left: 10%;
+      z-index: 89;
+    }
 
     .sub-link {
       font-size: 14px;
@@ -59,14 +51,11 @@ const Container = styled.div`
       //margin-right: 1vw;
       &:hover {
         color: #262626;
-
       }
     }
     
     a.active {
       color: #262626;
     }
-
   }
-
 `;

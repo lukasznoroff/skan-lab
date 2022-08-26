@@ -59,26 +59,13 @@ const Skanning = () => {
 export default Skanning;
 
 const Wrapper = styled.div`
-
-  //width: 50vw;
-  ////width: 100%;
-  //height: 100vh;
-  //position: relative;
-  //
-  //.container {
-  //  position: absolute;
-  //  top: 7vh;
-  //  background-color: #fff;
-  //  left:  -100%;
-  //  //width: 100%;
-  //  height: 100%;
-  //  width: 100vw;
-  //}
-
   width: 50vw;
-  //width: 100%;
   height: 90vh;
   position: relative;
+
+  @media (max-width: 768px) {
+    height: 105vh;
+  }
 
   .container {
 
@@ -86,21 +73,27 @@ const Wrapper = styled.div`
     top: 10vh;
     background-color: #f9f8f6;
     left: 0%;
-    //width: 100%;
     height: 100%;
-    width: 100vw;
-
+    width: 103vw;
     display: flex;
-
+    overflow: scroll;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      top: 16%;
+    }
   }
 
   .col-left {
-    //width: 50%;
     flex: 1;
 
     .image-wrapper {
       padding: 30px 30px 0 0;
       height: 80%;
+
+      @media (max-width: 768px) {
+        padding: 0;
+        height: 330px;
+      }
 
       img {
         width: 100%;
@@ -118,21 +111,42 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      max-width: 85%;
+      text-align: center;
+    }
     p {
       max-width: 85%;
       margin: 20px 0 100px;
+      font-size: 15px;
+      @media (max-width: 768px) {
+        margin: 0;
+      }
     }
 
 
     .bottom-box {
       h2 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        @media (max-width: 768px) {
+          font-size: 17px;
+        }
       }
 
       max-width: 85%;
       display: flex;
       justify-content: space-between;
       width: 100%;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        font-size: 15px;
+      }
     }
   }
 `;

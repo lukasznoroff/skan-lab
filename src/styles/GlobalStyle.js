@@ -6,9 +6,15 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
     background-color: #f9f8f6;
     font-family: 'Open Sans', sans-serif;
+    //overflow: hidden;
   }
  
   h1 {

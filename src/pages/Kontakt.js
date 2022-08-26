@@ -53,11 +53,17 @@ const MapWrapper = styled.div`
    
     width: 50%;
     height: 30%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     h1 {
       font-size: 20px;
       color: #000;
       margin-bottom: 30px;
       margin-right: 0;
+      @media (max-width: 768px) {
+        margin-bottom: 10px;
+      }
     }
   }
 `;

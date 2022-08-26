@@ -43,6 +43,10 @@ const Wrapper = styled.div`
   height: 90vh;
   position: relative;
 
+  @media (max-width: 768px) {
+    height: 105vh;
+  }
+
   .container {
     display: flex;
     position: absolute;
@@ -50,15 +54,27 @@ const Wrapper = styled.div`
     background-color: #f9f8f6;
     left: 0%;
     height: 100%;
-    width: 100vw;
+    width: 103vw;
+    overflow: scroll;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      top: 16%;
+    }
   }
 
   .col-left {
     flex: 1;
-
+    @media (max-width: 768px) {
+      flex: 0;
+    }
     .image-wrapper {
       padding: 30px 30px 0 0;
       height: 80%;
+
+      @media (max-width: 768px) {
+        height: 330px;
+        padding: 0;
+      }
 
       img {
         width: 100%;
@@ -76,14 +92,29 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+      h1 {
+        font-size: 25px;
+      }
+
     p {
       max-width: 85%;
       margin: 20px 0 100px;
+      font-size: 15px;
+      @media (max-width: 768px) {
+        margin-bottom: 45px;
+      }
     }
 
     .bottom-box {
       max-width: 85%;
       width: 100%;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        font-size: 15px;
+      }
     }
   }
 `;

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 
+
+
 const Landskap = () => {
     return (
         <Wrapper>
@@ -48,6 +50,10 @@ const Wrapper = styled.div`
   height: 90vh;
   position: relative;
 
+  @media (max-width: 768px) {
+    height: 105vh;
+  }
+
   .container {
     display: flex;
     position: absolute;
@@ -55,7 +61,12 @@ const Wrapper = styled.div`
     background-color: #f9f8f6;
     left: 0%;
     height: 100%;
-    width: 100vw;
+    width: 103vw;
+    overflow: scroll;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      top: 16%;
+    }
   }
 
   .col-left {
@@ -64,6 +75,11 @@ const Wrapper = styled.div`
     .image-wrapper {
       padding: 30px 30px 0 0;
       height: 80%;
+
+      @media (max-width: 768px) {
+        padding: 0;
+        height: 330px;
+      }
 
       img {
         width: 100%;
@@ -81,14 +97,28 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
 
-    p {
-      max-width: 85%;
-      margin: 20px 0 100px;
+    @media (max-width: 768px) {
+      padding: 0;
     }
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        max-width: 85%;
+        margin: 20px 0 100px;
+        font-size: 15px;
+        @media (max-width: 768px) {
+          margin-bottom: 40px;
+        }
+      }
 
     .bottom-box {
       max-width: 85%;
       width: 100%;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        font-size: 15px;
+      }
     }
   }
 `;

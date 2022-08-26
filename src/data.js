@@ -91,7 +91,7 @@ export const team = [
         email: "piotr@skan-lab.no"
     },
     {
-        id: 1,
+        id: 2,
         img: Rune,
         text1: "3D-skanning",
         text2: "Databehandler",
@@ -100,7 +100,7 @@ export const team = [
         email: "rune@skan-lab.no"
     },
     {
-        id: 1,
+        id: 3,
         img: Adam,
         text1: "Landskapsarkitekt MNLA",
         text2: "BIM-koordinator, Databehandler",
@@ -109,7 +109,7 @@ export const team = [
         email: "adam@skan-lab.no"
     },
     {
-        id: 1,
+        id: 4,
         img: Dorota,
         text1: "Arkitekt",
         text2: "BIM Manager",
@@ -118,7 +118,7 @@ export const team = [
         email: "partners@skan-lab.no"
     },
     {
-        id: 1,
+        id: 5,
         img: Wojciech,
         text1: "Arkitekt",
         text2: "BIM Manager",
