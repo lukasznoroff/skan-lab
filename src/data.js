@@ -8,6 +8,17 @@ import photo7 from "./images/photo7.jpg";
 import photo8 from "./images/photo8.jpg";
 import photo9 from "./images/photo9.jpg";
 
+
+import gphoto1 from "./images/gphoto1.jpeg";
+import gphoto2 from "./images/gphoto2.jpeg";
+import gphoto3 from "./images/gphoto3.jpeg";
+import gphoto4 from "./images/gphoto4.jpg";
+import gphoto6 from "./images/gphoto6.jpeg";
+import gphoto7 from "./images/gphoto7.jpg";
+import gphoto8 from "./images/gphoto8.jpeg";
+import gphoto9 from "./images/gphoto9.jpg";
+
+
 import Piotr from "./images/Piotr.png";
 import Rune from "./images/Rune.png";
 import Adam from "./images/Adam.png";
@@ -79,6 +90,73 @@ export const container = [
 
     }
 ]
+
+
+export const gridPotos = [
+    {
+        id: 1,
+        img: gphoto1,
+        title: "3D skanning og oppmäling",
+        link: "/tjenester/Skanning"
+    },
+    {
+        id: 2,
+        img: gphoto2,
+        title: "Arkitektur",
+        link: "/tjenester/Arkitektur"
+
+    },
+    {
+        id: 3,
+        img: gphoto3,
+        title: "BIM",
+        link: "/tjenester/Bim"
+
+    },
+    {
+        id: 4,
+        img: gphoto4,
+        title: "Landskap",
+        link: "/tjenester/Landskap"
+
+    },
+    {
+        id: 5,
+        img: photo5,
+        title: "3D skanning og oppmäling",
+        link: "/tjenester/Skanning"
+
+    },
+    {
+        id: 6,
+        img: gphoto6,
+        title: "Arkitektur",
+        link: "/tjenester/Arkitektur"
+
+    },
+    {
+        id: 7,
+        img: gphoto7,
+        title: "BIM",
+        link: "/tjenester/Bim"
+
+    },
+    {
+        id: 8,
+        img: gphoto8,
+        title: "Arkitektur",
+        link: "/tjenester/Arkitektur"
+
+    },
+    {
+        id: 9,
+        img: gphoto9,
+        title: "Landskap",
+        link: "/tjenester/Landskap"
+
+    }
+]
+
 
 export const team = [
     {

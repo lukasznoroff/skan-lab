@@ -1,4 +1,5 @@
-import {container} from "../data";
+// import {container} from "../data";
+import {gridPotos} from "../data";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
@@ -6,7 +7,7 @@ const GridContainer = () => {
     return (
         <div>
             <GridWrapper>
-                {container.map((item) => {
+                {gridPotos.map((item) => {
                     return (
                         <div className="grid-item" key={item.id}>
                             <img src={item.img} alt={item.title}/>
@@ -33,12 +34,13 @@ const GridWrapper = styled.div`
   height: 89vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 5px;
   position: absolute;
   top: 11%;
 
   @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
     top: 20%;
   }
   
@@ -50,20 +52,20 @@ const GridWrapper = styled.div`
     height: auto;
 
     :before {
-      opacity: 0;
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      width: 0;
-      height: 0;
-      border-top: 13px solid transparent;
-      border-bottom: 13px solid transparent;
-      border-right: 13px solid #fff;
-      transform: rotate(45deg);
-      margin-left: -2px;
-      margin-top: -9px;
+      //opacity: 0;
+      //content: "";
+      //position: absolute;
+      //top: 0;
+      //left: 0;
+      //z-index: 10;
+      //width: 0;
+      //height: 0;
+      //border-top: 13px solid transparent;
+      //border-bottom: 13px solid transparent;
+      //border-right: 13px solid #fff;
+      //transform: rotate(45deg);
+      //margin-left: -2px;
+      //margin-top: -9px;
     }
 
     img {

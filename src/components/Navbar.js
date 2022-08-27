@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Link, NavLink, useLocation, useNavigate} from "react-router-dom";
+import {NavLink, useLocation, useNavigate} from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "../images/logo-white.png";
 import LogoBlack from "../images/logo-black.png";
@@ -40,9 +40,9 @@ const Navbar = () => {
                 <div className="line2"></div>
                 <div className="line3"></div>
             </HamburgerWrapper>
-            <Link to="/" alt="logo">
-                <img className="logo" src={window.location.pathname === "/" ? LogoWhite : LogoBlack}/>
-            </Link>
+            <div>
+                <img className="logo" alt="logo" src={window.location.pathname === "/" ? LogoWhite : LogoBlack}/>
+            </div>
             <StyledNav  onClick={showSidebar} className={window.location.pathname === "/" ? "gradient" : ""}>
                 <StyledUl  isOpen={isOpen}>
                     <NavLink to="tjenester">
@@ -71,6 +71,7 @@ const StyledNavbar = styled.div`
   width: 100vw;
   padding: 1rem;
   min-height: 10vh;
+  //min-height: 11vh;
   position: absolute;
   left: 0;
   right: 0;
@@ -85,6 +86,7 @@ const StyledNavbar = styled.div`
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
     width: 100vw;
     min-height: 10vh;
+    //min-height: 11vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -123,11 +125,20 @@ const StyledNav = styled.nav`
   justify-content: flex-end;
   align-items: center;
   width: 75%;
-  
+  //padding-bottom: 1vw;  /****/
   @media (max-width: 768px) {
     width: 100%;
     transition: transform ease-in-out 0.4s;
     transform: translateX(${({isOpen}) => isOpen ? "0" : "-100%"});
+
+    //webkit-transition: left 0.3s ease-in-out !important;
+    //-moz-transition: left 0.3s ease-in-out !important;
+    //-o-transition: left 0.3s ease-in-out !important;
+    //-ms-transition: left 0.3s ease-in-out !important;
+    //transition: left 0.3s ease-in-out !important;
+    
+    
+    
     width: 100vw;
     position: absolute;
 
@@ -170,6 +181,12 @@ const StyledUl = styled.ul`
     left: 0;
     width: 100%;
     height: 100%;
+
+    //webkit-transition: left 0.3s ease-in-out !important;
+    //-moz-transition: left 0.3s ease-in-out !important;
+    //-o-transition: left 0.3s ease-in-out !important;
+    //-ms-transition: left 0.3s ease-in-out !important;
+    //transition: left 0.3s ease-in-out !important;
 
   }
 
