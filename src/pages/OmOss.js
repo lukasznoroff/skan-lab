@@ -37,6 +37,9 @@ const Wrapper = styled.div`
 
   @media (max-width: 768px) {
     top: 20%;
+    margin-bottom: 50vh;
+    display: flex;
+    justify-content: center;
   }
 
   .container {
@@ -54,7 +57,9 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     width: 90vw;
-
+    @media (max-width: 768px) {
+      margin-bottom: 25vh;
+    }
   }
 
   .item-wrapper {

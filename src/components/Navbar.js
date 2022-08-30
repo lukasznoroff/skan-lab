@@ -30,12 +30,18 @@ const Navbar = () => {
     return (
 
 
-        <StyledNavbar>
+        <StyledNavbar style={{position: isOpen ? "fixed" : "fixed"}}
+            className={isOpen ? "bgc" : ""}
+
+        >
         {/*{isDesktop ? StyledNavbar: null}*/}
         {/*{isDesktop ? window.location.pathname === "/Tjenester" :  "/" }*/}
         {/*{isDesktop ? navigate("/Tjenester") :  "/" }*/}
 
-            <HamburgerWrapper isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+            <HamburgerWrapper isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}
+                              // className={!isOpen ? "scroll-on" : "scroll-off"}
+                          // style={{overflowY: isOpen ? "hidden" : ""}}
+            >
                 <div className="line1"></div>
                 <div className="line2"></div>
                 <div className="line3"></div>
@@ -100,6 +106,8 @@ const StyledNavbar = styled.div`
     //min-height: 15vh;
     //position: fixed;
     //left: 0;top: 0;
+    background-color: #f7f5f5;
+    width: 100%;
     
   }
 
@@ -117,7 +125,10 @@ const StyledNavbar = styled.div`
     z-index: 99999;
     position: relative;
   }
+  
 `;
+
+
 
 
 const StyledNav = styled.nav`
@@ -176,7 +187,7 @@ const StyledUl = styled.ul`
     background-color: #f7f5f5;
     width: 100%;
     height: 100vh;
-    position: fixed !important;
+    //position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
