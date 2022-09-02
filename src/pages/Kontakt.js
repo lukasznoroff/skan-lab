@@ -42,7 +42,6 @@ const MapWrapper = styled.div`
     padding: 0;
     margin: 0;
     filter: grayscale(1);
-    
   }
 
   .address-wrapper {
@@ -50,8 +49,6 @@ const MapWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-    //width: 50%;
     width: 100%;
     height: 30%;
     @media (max-width: 768px) {

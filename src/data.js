@@ -170,16 +170,6 @@ export const team = [
         email: "piotr@skan-lab.no"
     },
     {
-        id: 2,
-        img: Rune,
-        title: "Rune Egil Oye",
-        text1: "3D-skanning",
-        text2: "Databehandler",
-        text3: "Medeier",
-        phone: "+47 997 10 578",
-        email: "rune@skan-lab.no"
-    },
-    {
         id: 3,
         img: Adam,
         title: "Adam Janisio",
@@ -188,6 +178,16 @@ export const team = [
         text3: "Medeier",
         phone: "+47 942 05 109",
         email: "adam@skan-lab.no"
+    },
+    {
+        id: 2,
+        img: Rune,
+        title: "Rune Egil Oye",
+        text1: "3D-skanning",
+        text2: "Databehandler",
+        text3: "Medeier",
+        phone: "+47 997 10 578",
+        email: "rune@skan-lab.no"
     },
     {
         id: 4,

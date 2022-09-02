@@ -139,21 +139,12 @@ const StyledNav = styled.nav`
   width: 75%;
   //position: absolute;
   //right: 0;
-  
   //padding-bottom: 1vw;  /****/
+  
   @media (max-width: 768px) {
     width: 100%;
     transition: transform ease-in-out 0.4s;
     transform: translateX(${({isOpen}) => isOpen ? "0" : "-100%"});
-
-    //webkit-transition: left 0.3s ease-in-out !important;
-    //-moz-transition: left 0.3s ease-in-out !important;
-    //-o-transition: left 0.3s ease-in-out !important;
-    //-ms-transition: left 0.3s ease-in-out !important;
-    //transition: left 0.3s ease-in-out !important;
-    
-    
-    
     width: 100vw;
     position: absolute;
 
@@ -191,18 +182,10 @@ const StyledUl = styled.ul`
     background-color: #f7f5f5;
     width: 100%;
     height: 100vh;
-    //position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
-    //webkit-transition: left 0.3s ease-in-out !important;
-    //-moz-transition: left 0.3s ease-in-out !important;
-    //-o-transition: left 0.3s ease-in-out !important;
-    //-ms-transition: left 0.3s ease-in-out !important;
-    //transition: left 0.3s ease-in-out !important;
-
   }
 
 

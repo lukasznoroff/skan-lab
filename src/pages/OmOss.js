@@ -4,6 +4,17 @@ import {team} from "../data";
 const OmOss = () => {
     return (
         <Wrapper>
+            <div className="header-wrapper">
+                <h1>Vi er Skan-LAB</h1>
+                <p>I 2021 tre av oss, Rune Adam og Piotr satt sammen på en kaffe og tenkte at vi jobber i forskjellige
+                    bransjer som enkelt kan samarbeide sammen.
+                    I 2022 begynte &quot;eventyret&quot;, vi bestemte oss for og utvide firma fra bare land oppmåling til flere
+                    tjenester. Vi har nå endret navn til Skan-LAB og med det mener vi: Skanning, oppmåling til landskap,
+                    Arkitektur og BIM.
+                    Vi kan supportere deres prosjekter som kreves 3D Laser skanning opp til 400 LOD, BIM, prosjektering
+                    av landskap arkitektur, oppmåling og utstykking, AS Build.
+                </p>
+            </div>
             <div className="container">
                 {team.map((item) => {
                     return (
@@ -31,35 +42,66 @@ const OmOss = () => {
 export default OmOss;
 
 const Wrapper = styled.div`
-  width: 100vw;
-  height: 90vh;
+
+  .header-wrapper {
+    max-width: 39.5%;
+    margin: auto;
+    margin-bottom: 80px;
+    @media (max-width: 768px) {
+      max-width: 100vw;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+
   position: absolute;
   top: 10%;
+  top: 20%;
+  top: 14%;
 
   @media (max-width: 768px) {
-    top: 20%;
+    top: 10%;
     margin-bottom: 50vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    max-width: 100vw;
+    padding: 20px;
   }
 
   .container {
-    display: flex;
     height: 100%;
+    height: 55vh;
+    width: 50vw;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: stretch;
+    justify-items: center;
+    text-align: center;
 
     @media (max-width: 768px) {
-      flex-direction: column;
-      justify-content: space-between;
-      height: 130%;
+      display: block;
+      width: auto;
     }
   }
 
   .container-item {
+    //width: 155px;
+    //height: 100px;
+    width: 218px;
+    height: 100px;
     display: flex;
     align-items: center;
-    width: 90vw;
     @media (max-width: 768px) {
-      margin-bottom: 25vh;
+      margin-bottom: 18vh;
     }
   }
 
@@ -75,7 +117,11 @@ const Wrapper = styled.div`
 
     .item-text {
       font-size: 12px;
+      font-size: .7vw;
       text-align: center;
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
 
       .first-text-item {
         font-weight: 800;
@@ -83,7 +129,7 @@ const Wrapper = styled.div`
       }
 
       .phone-text-item {
-        margin: 10px 0 10px;
+        margin: .3vw 0 .3vw;
       }
     }
   }
