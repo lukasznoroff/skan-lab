@@ -51,7 +51,7 @@ const Wrapper = styled.div`
     display: flex;
     position: absolute;
     top: 10vh;
-    background-color: #f9f8f6;
+    background-color: #fff;
     left: 0%;
     height: 100%;
     width: 103vw;
@@ -114,6 +114,11 @@ const Wrapper = styled.div`
       @media (max-width: 768px) {
         flex-direction: column;
         font-size: 15px;
+      }
+      .col-left-list {
+        ul > li {
+          font-size: 15px;
+        }
       }
     }
   }

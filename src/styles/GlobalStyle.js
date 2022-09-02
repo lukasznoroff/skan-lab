@@ -12,7 +12,8 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    background-color: #f9f8f6;
+    //background-color: #f9f8f6;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
   }
  
@@ -26,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   h2 {
-    font-size: 1.3vw;
+    font-size: 18px;
     text-transform: uppercase;
     color: #383838;
     @media (max-width: 768px) {

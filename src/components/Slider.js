@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import {EffectFade, Autoplay} from "swiper";
@@ -7,12 +8,12 @@ import "swiper/css/navigation"
 
 const Slider = () => {
     return (
-            <SliderContainer>
+        <SliderContainer>
             <Swiper className="swiper"
-                modules={[EffectFade, Autoplay]}
-                effect={"fade"}
-                speed={4000}
-                slidesPerView={1}
+                    modules={[EffectFade, Autoplay]}
+                    effect={"fade"}
+                    speed={4000}
+                    slidesPerView={1}
                     loop={true}
                     autoplay={true}
                     loop={true}
@@ -24,20 +25,28 @@ const Slider = () => {
             >
 
                 <SwiperSlide className="swiper-slide">
-                    <img src={require('../images/photo1.jpg')} />
+                    <Link to="/tjenester/Landskap">
+                        <img src={require('../images/photo1.jpg')}/>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                    <img src={require('../images/photo2.jpg')} />
+                    <Link to="/tjenester/Arkitektur">
+                        <img src={require('../images/photo2.jpg')}/>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                    <img src={require('../images/photo8.jpg')} />
+                    <Link to="/tjenester/Arkitektur">
+                        <img src={require('../images/photo8.jpg')}/>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                    <img src={require('../images/photo6.jpg')} />
+                    <Link to="/tjenester/Landskap">
+                        <img src={require('../images/gphoto4.jpeg')}/>
+                    </Link>
                 </SwiperSlide>
 
             </Swiper>
-            </SliderContainer>
+        </SliderContainer>
     );
 };
 
@@ -48,18 +57,18 @@ const SliderContainer = styled.div`
   //left: 0;
   //right: 0;
   //z-index: 999;
-    .swiper {
-      width: 100%;
-      height: 100vh;
+  .swiper {
+    width: 100%;
+    height: 100vh;
 
 
-      .swiper-slide {
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
+  }
 
 `;

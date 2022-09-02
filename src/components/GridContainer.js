@@ -10,13 +10,15 @@ const GridContainer = () => {
                 {gridPotos.map((item) => {
                     return (
                         <div className="grid-item" key={item.id}>
+                            <Link to={item.link}>
                             <img src={item.img} alt={item.title}/>
                             <div className="text-item-wrapper">
                                 <p className="text-item">{item.title}</p>
-                                <div className="button-wrapper" onClick={()=>window.scrollTo(0, 0)}>
-                                    <Link to={item.link} className="btn">vis mer</Link>
-                                </div>
+                                {/*<div className="button-wrapper" onClick={()=>window.scrollTo(0, 0)}>*/}
+                                {/*    <Link to={item.link} className="btn">vis mer</Link>*/}
+                                {/*</div>*/}
                             </div>
+                            </Link>
                         </div>
                     )
                 })
@@ -86,34 +88,36 @@ const GridWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
 
-    .button-wrapper {
-      display: flex;
-
-      .btn {
-
-        padding: 6px 20px 6px 9.6px;
-        background-color: #ffffffb3;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        font-weight: 300;
-        font-size: 0.85rem;
-        color: #262626;
-
-        &:after {
-          content: "▸";
-          position: absolute;
-          margin-left: 4px;
-          //bottom: 1.2rem;
-          //z-index: 10;
-          font-size: .85rem;
-          //padding: 0.2rem 0.9rem 0.3rem 0.6rem;
-          //opacity: 0;
-          transition: opacity .3s ease-in .15s;
-        }
-      }
-    }
+    //.button-wrapper {
+    //  display: flex;
+    //
+    //  .btn {
+    //
+    //    padding: 6px 20px 6px 9.6px;
+    //    background-color: #ffffffb3;
+    //    border: none;
+    //    outline: none;
+    //    cursor: pointer;
+    //    font-weight: 300;
+    //    font-size: 0.85rem;
+    //    color: #262626;
+    //
+    //    &:after {
+    //      content: "▸";
+    //      position: absolute;
+    //      margin-left: 4px;
+    //      //bottom: 1.2rem;
+    //      //z-index: 10;
+    //      font-size: .85rem;
+    //      //padding: 0.2rem 0.9rem 0.3rem 0.6rem;
+    //      //opacity: 0;
+    //      transition: opacity .3s ease-in .15s;
+    //    }
+    //  }
+    //}
   }
 
   .grid-item .text-item-wrapper {

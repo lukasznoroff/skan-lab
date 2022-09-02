@@ -11,7 +11,8 @@ const OmOss = () => {
                             <div className="item-wrapper">
                                 <img src={item.img} alt={item.text1}/>
                                 <ul className="item-text">
-                                    <li className="first-text-item">{item.text1}</li>
+                                    <li className="first-text-item">{item.title}</li>
+                                    <li>{item.text1}</li>
                                     <li>{item.text2}</li>
                                     <li>{item.text3}</li>
                                     <li className="phone-text-item">{item.phone}</li>

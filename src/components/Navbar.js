@@ -1,6 +1,6 @@
 import React from "react";
 
-import {NavLink, useLocation, useNavigate} from "react-router-dom";
+import {Link, NavLink, useLocation, useNavigate} from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "../images/logo-white.png";
 import LogoBlack from "../images/logo-black.png";
@@ -46,13 +46,14 @@ const Navbar = () => {
                 <div className="line2"></div>
                 <div className="line3"></div>
             </HamburgerWrapper>
-            <div>
+            <Link to="/">
                 <img className="logo" alt="logo" src={window.location.pathname === "/" ? LogoWhite : LogoBlack}/>
-            </div>
+            </Link>
             <StyledNav  onClick={showSidebar} className={window.location.pathname === "/" ? "gradient" : ""}>
                 <StyledUl  isOpen={isOpen}>
                     <NavLink to="tjenester">
-                        <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>tjenester</li>
+                        <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>tjenester
+                        </li>
                     </NavLink>
                     <NavLink to="omoss">
                         <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>om oss</li>
@@ -75,7 +76,7 @@ const StyledNavbar = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 1rem;
+  //padding: 1rem;
   min-height: 10vh;
   //min-height: 11vh;
   position: absolute;
@@ -120,9 +121,9 @@ const StyledNavbar = styled.div`
     display: flex;
     align-items: center;
     padding: 10px;
-    width: 80%;
-    height: 80%;
-    z-index: 99999;
+    width: 90%;
+    height: 90%;
+    z-index: 999999;
     position: relative;
   }
   
@@ -136,6 +137,9 @@ const StyledNav = styled.nav`
   justify-content: flex-end;
   align-items: center;
   width: 75%;
+  //position: absolute;
+  //right: 0;
+  
   //padding-bottom: 1vw;  /****/
   @media (max-width: 768px) {
     width: 100%;
@@ -203,14 +207,14 @@ const StyledUl = styled.ul`
 
 
   .nav-link {
-    padding: 5px 20px;
-    padding: 5px 1.3vw;
+    padding: 5px 18px;
+    //padding: 5px 1.3vw;
     text-transform: lowercase;
     transition: 0.3s ease-in-out;
   }
 
   &:last-child {
-    padding-right: 22px;
+    //padding-right: 22px;
   }
 
   .white-link, .dark-link {

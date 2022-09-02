@@ -71,7 +71,7 @@ const Wrapper = styled.div`
 
     position: absolute;
     top: 10vh;
-    background-color: #f9f8f6;
+    background-color: #fff;
     left: 0%;
     height: 100%;
     width: 103vw;
@@ -122,7 +122,7 @@ const Wrapper = styled.div`
     }
     p {
       max-width: 85%;
-      margin: 20px 0 100px;
+      margin: 20px 0 70px;
       font-size: 15px;
       @media (max-width: 768px) {
         margin: 0;
@@ -146,6 +146,11 @@ const Wrapper = styled.div`
       @media (max-width: 768px) {
         flex-direction: column;
         font-size: 15px;
+      }
+      .col-left-list, .col-right-list  {
+        ul > li {
+          font-size: 15px;
+        }
       }
     }
   }

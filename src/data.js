@@ -12,7 +12,7 @@ import photo9 from "./images/photo9.jpg";
 import gphoto1 from "./images/gphoto1.jpeg";
 import gphoto2 from "./images/gphoto2.jpeg";
 import gphoto3 from "./images/gphoto3.jpeg";
-import gphoto4 from "./images/gphoto4.jpg";
+import gphoto4 from "./images/gphoto4.jpeg";
 import gphoto6 from "./images/gphoto6.jpeg";
 import gphoto7 from "./images/gphoto7.jpg";
 import gphoto8 from "./images/gphoto8.jpeg";
@@ -95,7 +95,7 @@ export const container = [
 export const gridPotos = [
     {
         id: 1,
-        img: gphoto1,
+        img: photo5,
         title: "3D skanning og oppmäling",
         link: "/tjenester/Skanning"
     },
@@ -122,7 +122,7 @@ export const gridPotos = [
     },
     {
         id: 5,
-        img: photo5,
+        img: gphoto1,
         title: "3D skanning og oppmäling",
         link: "/tjenester/Skanning"
 
@@ -162,6 +162,7 @@ export const team = [
     {
         id: 1,
         img: Piotr,
+        title: "Piotr Ludwig",
         text1: "Oppmålingsingeniør",
         text2: "Daglig leder",
         text3: "Medeier",
@@ -171,6 +172,7 @@ export const team = [
     {
         id: 2,
         img: Rune,
+        title: "Rune Egil Oye",
         text1: "3D-skanning",
         text2: "Databehandler",
         text3: "Medeier",
@@ -180,6 +182,7 @@ export const team = [
     {
         id: 3,
         img: Adam,
+        title: "Adam Janisio",
         text1: "Landskapsarkitekt MNLA",
         text2: "BIM-koordinator, Databehandler",
         text3: "Medeier",
@@ -189,6 +192,7 @@ export const team = [
     {
         id: 4,
         img: Dorota,
+        title: "Dorota Pawlowska",
         text1: "Arkitekt",
         text2: "BIM Manager",
         text3: "Partner",
@@ -198,6 +202,7 @@ export const team = [
     {
         id: 5,
         img: Wojciech,
+        title: "Wojciech Pawlowski",
         text1: "Arkitekt",
         text2: "BIM Manager",
         text3: "Partner",
