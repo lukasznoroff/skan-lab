@@ -74,7 +74,7 @@ const Wrapper = styled.div`
     background-color: #fff;
     left: 0%;
     height: 100%;
-    width: 103vw;
+    width: 100vw;
     display: flex;
     overflow: scroll;
     @media (max-width: 768px) {
