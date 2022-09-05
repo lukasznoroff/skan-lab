@@ -25,7 +25,7 @@ const Slider = () => {
             >
 
                 <SwiperSlide className="swiper-slide">
-                    <Link to="/tjenester/Landskap">
+                    <Link to="/tjenester/Skanning">
                         <img src={require('../images/photo1.jpg')}/>
                     </Link>
                 </SwiperSlide>
