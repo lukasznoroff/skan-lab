@@ -26,17 +26,17 @@ const Slider = () => {
 
                 <SwiperSlide className="swiper-slide">
                     <Link to="/tjenester/Skanning">
-                        <img src={require('../images/photo1.jpg')}/>
+                        <img src={require('../images/photos1.jpg')}/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
                     <Link to="/tjenester/Arkitektur">
-                        <img src={require('../images/photo2.jpg')}/>
+                        <img src={require('../images/photos2.jpg')}/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
                     <Link to="/tjenester/Arkitektur">
-                        <img src={require('../images/photo8.jpg')}/>
+                        <img src={require('../images/photos3.jpg')}/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
