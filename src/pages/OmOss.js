@@ -125,11 +125,11 @@ const Wrapper = styled.div`
 
       .first-text-item {
         font-weight: 800;
-        margin: 10px 0 10px;
+        margin: 10px 0 3px;
       }
 
       .phone-text-item {
-        margin: .3vw 0 .3vw;
+        margin: .2vw 0 .2vw;
       }
     }
   }
