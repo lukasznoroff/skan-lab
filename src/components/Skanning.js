@@ -7,7 +7,7 @@ const Skanning = () => {
             <div className="container">
                 <div className="col-left">
                     <div className="image-wrapper">
-                        <img src={require('../images/photo7.jpg')}/>
+                        <img src={require('../images/photo5.jpg')}/>
                     </div>
                 </div>
                 <div className="col-right">

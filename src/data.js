@@ -101,59 +101,51 @@ export const gridPotos = [
     },
     {
         id: 2,
-        img: gphoto2,
-        title: "Arkitektur",
-        link: "/tjenester/Arkitektur"
-
+        img: gphoto9,
+        title: "Landskap",
+        link: "/tjenester/Landskap"
     },
     {
         id: 3,
-        img: gphoto3,
-        title: "BIM",
-        link: "/tjenester/Bim"
-
+        img: gphoto2,
+        title: "Arkitektur",
+        link: "/tjenester/Arkitektur"
     },
     {
         id: 4,
-        img: gphoto4,
-        title: "Landskap",
-        link: "/tjenester/Landskap"
-
+        img: gphoto3,
+        title: "BIM",
+        link: "/tjenester/Bim"
     },
     {
         id: 5,
         img: gphoto1,
         title: "3D skanning og oppmäling",
         link: "/tjenester/Skanning"
-
     },
     {
         id: 6,
-        img: gphoto6,
-        title: "Arkitektur",
-        link: "/tjenester/Arkitektur"
-
+        img: gphoto4,
+        title: "Landskap",
+        link: "/tjenester/Landskap"
     },
     {
         id: 7,
-        img: gphoto7,
-        title: "BIM",
-        link: "/tjenester/Bim"
-
+        img: gphoto6,
+        title: "Arkitektur",
+        link: "/tjenester/Arkitektur"
     },
     {
         id: 8,
-        img: gphoto8,
-        title: "Arkitektur",
-        link: "/tjenester/Arkitektur"
-
+        img: gphoto7,
+        title: "BIM",
+        link: "/tjenester/Bim"
     },
     {
         id: 9,
-        img: gphoto9,
-        title: "Landskap",
-        link: "/tjenester/Landskap"
-
+        img: gphoto8,
+        title: "Arkitektur",
+        link: "/tjenester/Arkitektur"
     }
 ]
 
@@ -173,8 +165,8 @@ export const team = [
         id: 3,
         img: Adam,
         title: "Adam Janisio",
-        text1: "Landskapsarkitekt MNLA",
-        text2: "BIM-koordinator, Databehandler",
+        text1: "Landskapsarkitekt",
+        text2: "BIM-koordinator Databehandler",
         text3: "Medeier",
         phone: "+47 942 05 109",
         email: "adam@skan-lab.no"

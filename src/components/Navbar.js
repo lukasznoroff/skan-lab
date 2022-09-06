@@ -84,6 +84,7 @@ const StyledNavbar = styled.div`
   right: 0;
   z-index: 999;
   margin: 0 auto;
+  padding-right: 33px;
   img {
     width: 100px;
     height: 100px;
@@ -98,6 +99,7 @@ const StyledNavbar = styled.div`
     top: 0;
     left: 0;
     z-index: 99999;
+    padding-right: 33px;
   }
 
  
@@ -125,6 +127,7 @@ const StyledNavbar = styled.div`
     height: 90%;
     z-index: 999999;
     position: relative;
+    padding-left: 23px;
   }
   
 `;

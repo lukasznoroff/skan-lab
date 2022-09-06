@@ -7,7 +7,7 @@ const Bim = () => {
             <div className="container">
                 <div className="col-left">
                     <div className="image-wrapper">
-                        <img src={require('../images/photo5.jpg')}/>
+                        <img src={require('../images/photo3.jpg')}/>
                     </div>
                 </div>
                 <div className="col-right">

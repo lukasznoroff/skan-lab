@@ -7,7 +7,7 @@ const Arkitektur = () => {
             <div className="container">
                 <div className="col-left">
                     <div className="image-wrapper">
-                        <img src={require('../images/photo6.jpg')}/>
+                        <img src={require('../images/gphoto2.jpeg')}/>
                     </div>
                 </div>
                 <div className="col-right">

@@ -61,6 +61,9 @@ const Container = styled.div`
       color: #c0c0c0;
       transition: color .3s ease-in-out;
       //margin-right: 1vw;
+      &:last-child {
+        padding-right: 33px;
+      }
       &:hover {
         color: #262626;
       }

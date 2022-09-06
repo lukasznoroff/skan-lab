@@ -57,7 +57,7 @@ const Wrapper = styled.div`
     }
 
     p {
-      font-size: 13px;
+      font-size: 15px;
     }
   }
 
@@ -106,7 +106,7 @@ const Wrapper = styled.div`
   }
 
   .item-wrapper {
-    height: 10vh;
+    height: 12vh;
     width: 100%;
 
     img {
@@ -117,7 +117,7 @@ const Wrapper = styled.div`
 
     .item-text {
       font-size: 12px;
-      font-size: .7vw;
+      font-size: .67vw;
       text-align: center;
       @media (max-width: 768px) {
         font-size: 12px;
