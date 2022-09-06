@@ -1,11 +1,11 @@
-import photo1 from "./images/photo1.jpg";
-import photo2 from "./images/photo2.jpg";
+import phono1a from "./images/phono1a.jpg";
+import photo2a from "./images/photo2a.jpg";
 import photo3 from "./images/photo3.jpg";
 import photo4 from "./images/photo4.jpg";
-import photo5 from "./images/photo5.jpg";
+import photo5a from "./images/photo5a.jpg";
 import photo6 from "./images/photo6.jpg";
-import photo7 from "./images/photo7.jpg";
-import photo8 from "./images/photo8.jpg";
+import photo7a from "./images/photo7a.jpg";
+import photo8a from "./images/photo8.jpg";
 import photo9 from "./images/photo9.jpg";
 
 
@@ -29,13 +29,13 @@ import Wojciech from "./images/Wojciech.jpg";
 export const container = [
     {
         id: 1,
-        img: photo1,
+        img: phono1a,
         title: "3D skanning og oppmäling",
         link: "/tjenester/Skanning"
     },
     {
         id: 2,
-        img: photo2,
+        img: photo2a,
         title: "Arkitektur",
         link: "/tjenester/Arkitektur"
 
@@ -56,7 +56,7 @@ export const container = [
     },
     {
         id: 5,
-        img: photo5,
+        img: photo5a,
         title: "3D skanning og oppmäling",
         link: "/tjenester/Skanning"
 
@@ -70,14 +70,14 @@ export const container = [
     },
     {
         id: 7,
-        img: photo7,
+        img: photo7a,
         title: "BIM",
         link: "/tjenester/Bim"
 
     },
     {
         id: 8,
-        img: photo8,
+        img: photo8a,
         title: "Arkitektur",
         link: "/tjenester/Arkitektur"
 
@@ -95,7 +95,7 @@ export const container = [
 export const gridPotos = [
     {
         id: 1,
-        img: photo5,
+        img: photo5a,
         title: "3D skanning og oppmäling",
         link: "/tjenester/Skanning"
     },
