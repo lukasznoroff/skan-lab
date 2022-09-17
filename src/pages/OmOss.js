@@ -1,42 +1,42 @@
 import styled from "styled-components";
-import {team} from "../data";
+import { team } from "../data";
 
 const OmOss = () => {
-    return (
-        <Wrapper>
-            <div className="header-wrapper">
-                <h1>Vi er Skan-LAB</h1>
-                <p>I 2021 tre av oss, Rune Adam og Piotr satt sammen på en kaffe og tenkte at vi jobber i forskjellige
-                    bransjer som enkelt kan samarbeide sammen.
-                    I 2022 begynte &quot;eventyret&quot;, vi bestemte oss for og utvide firma fra bare land oppmåling til flere
-                    tjenester. Vi har nå endret navn til Skan-LAB og med det mener vi: Skanning, oppmåling til landskap,
-                    Arkitektur og BIM.
-                    Vi kan supportere deres prosjekter som kreves 3D Laser skanning opp til 400 LOD, BIM, prosjektering
-                    av landskap arkitektur, oppmåling og utstykking, AS Build.
-                </p>
+  return (
+    <Wrapper>
+      <div className="header-wrapper">
+        <h1>Vi er Skan-LAB</h1>
+        <p>I 2021 tre av oss, Rune Adam og Piotr satt sammen på en kaffe og tenkte at vi jobber i forskjellige
+          bransjer som enkelt kan samarbeide sammen.
+          I 2022 begynte &quot;eventyret&quot;, vi bestemte oss for og utvide firma fra bare land oppmåling til flere
+          tjenester. Vi har nå endret navn til Skan-LAB og med det mener vi: Skanning, oppmåling til landskap,
+          Arkitektur og BIM.
+          Vi kan supportere deres prosjekter som kreves 3D Laser skanning opp til 400 LOD, BIM, prosjektering
+          av landskap arkitektur, oppmåling og utstykking, AS Build.
+        </p>
+      </div>
+      <div className="container">
+        {team.map((item) => {
+          return (
+            <div className="container-item" key={item.id}>
+              <div className="item-wrapper">
+                <img src={item.img} alt={item.text1} />
+                <ul className="item-text">
+                  <li className="first-text-item">{item.title}</li>
+                  <li className="text-list">{item.text1}</li>
+                  <li className="text-list">{item.text2}</li>
+                  <li className="text-list">{item.text3}</li>
+                  <li className="text-list">{item.phone}</li>
+                  <li className="text-list">{item.email}</li>
+                </ul>
+              </div>
             </div>
-            <div className="container">
-                {team.map((item) => {
-                    return (
-                        <div className="container-item" key={item.id}>
-                            <div className="item-wrapper">
-                                <img src={item.img} alt={item.text1}/>
-                                <ul className="item-text">
-                                    <li className="first-text-item">{item.title}</li>
-                                    <li>{item.text1}</li>
-                                    <li>{item.text2}</li>
-                                    <li>{item.text3}</li>
-                                    <li className="phone-text-item">{item.phone}</li>
-                                    <li>{item.email}</li>
-                                </ul>
-                            </div>
-                        </div>
-                    )
-                })
-                }
-            </div>
-        </Wrapper>
-    );
+          )
+        })
+        }
+      </div>
+    </Wrapper>
+  );
 };
 
 export default OmOss;
@@ -121,6 +121,10 @@ const Wrapper = styled.div`
       text-align: center;
       @media (max-width: 768px) {
         font-size: 12px;
+      }
+
+      .text-list {
+        font-size: 0.6vw
       }
 
       .first-text-item {

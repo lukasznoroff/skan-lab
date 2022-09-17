@@ -18,13 +18,13 @@ const Navbar = () => {
         // e.ontouchstart.preventDefault()
     }
 
-    React.useEffect(() => {
-        if (isDesktop) {
-            navigate('/Tjenester');
-        }else if(!isDesktop){
-            navigate("/")
-        }
-    },[isDesktop, setIsOpen])
+    // React.useEffect(() => {
+    //     if (isDesktop) {
+    //         navigate('/Tjenester');
+    //     }else if(!isDesktop){
+    //         navigate("/")                      Adam september
+    //     }
+    // },[isDesktop, setIsOpen])
 
 
     return (
@@ -109,7 +109,7 @@ const StyledNavbar = styled.div`
     //min-height: 15vh;
     //position: fixed;
     //left: 0;top: 0;
-    background-color: #f7f5f5;
+    /* background-color: #f7f5f5;             Adam september               */
     width: 100%;
     
   }

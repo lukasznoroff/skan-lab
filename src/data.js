@@ -144,7 +144,7 @@ export const gridPotos = [
     {
         id: 9,
         img: gphoto8,
-        title: "Arkitektur",
+        title: "3D skanning og oppmäling",
         link: "/tjenester/Arkitektur"
     }
 ]
