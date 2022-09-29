@@ -23,6 +23,11 @@ function App() {
           name="description"
           content="Skan-LAB konsulent firma tilbyr oppmåling, byggstiking, vegstikking, masseberegning, 3D skanning, BIM, visualisering, landskap og arkitektoniske prosjektering."
         />
+        <meta
+          itemprop="description"
+          content="Skan-LAB konsulent firma tilbyr oppmåling, byggstiking, vegstikking, masseberegning, 3D skanning, BIM, visualisering, landskap og arkitektoniske prosjektering."
+        />
+
       </Helmet>
       <BrowserRouter>
         <Navbar />
