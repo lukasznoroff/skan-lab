@@ -15,9 +15,8 @@ import { Helmet } from "react-helmet";
 
 function App() {
   return (
-    
+
     <div className="App">
-      <GlobalStyle />
       <Helmet>
         <title>Skan-lab</title>
         <meta
@@ -25,7 +24,7 @@ function App() {
           content="Skan-LAB konsulent firma tilbyr oppmåling, byggstiking, vegstikking, masseberegning, 3D skanning, BIM, visualisering, landskap og arkitektoniske prosjektering."
         />
         <meta property="og:description"
-        content="Skan-LAB konsulent firma tilbyr oppmåling, byggstiking, vegstikking, masseberegning, 3D skanning, BIM, visualisering, landskap og arkitektoniske prosjektering."
+          content="Skan-LAB konsulent firma tilbyr oppmåling, byggstiking, vegstikking, masseberegning, 3D skanning, BIM, visualisering, landskap og arkitektoniske prosjektering."
         />
         <meta
           itemprop="description"
@@ -33,6 +32,9 @@ function App() {
         />
 
       </Helmet>
+      
+      <GlobalStyle />
+
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -48,7 +50,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-   
+
   );
 }
 

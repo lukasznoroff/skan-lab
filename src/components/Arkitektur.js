@@ -3,43 +3,43 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet";
 
 const Arkitektur = () => {
-    return (
-        <Wrapper>
-             <Helmet>
+  return (
+    <Wrapper>
+      <Helmet>
         <title>Skan-lab | Arkitektur</title>
         <meta
           name="description"
           content="Skan-LAB konsulent firma tilbyr oppmåling, byggstiking, vegstikking, masseberegning, 3D skanning, BIM, visualisering, landskap og arkitektoniske prosjektering."
         />
-        </Helmet>
-            <div className="container">
-                <div className="col-left">
-                    <div className="image-wrapper">
-                        <img src={require('../images/gphoto2.jpeg')}/>
-                    </div>
-                </div>
-                <div className="col-right">
-                    <h1>Arkitektur</h1>
-                    <p>Vi bidrar i alle ledd i byggeprosessen og har lang erfaring med mulighetsstudier,
-                        prosjektering av små og store bygg og videre oppfølging. Alle prosjekter og situasjoner
-                        er ulike og arbeidet vårt har stort spenn i skala og omfang.
-                    </p>
-                    <div className="bottom-box">
-                        <div className="col-left-list">
-                            <ul>
-                                <li>Konsepter</li>
-                                <li>Offentlig og privat prosjekter</li>
-                                <li>Interiørprosjekter</li>
-                                <li>Industrielle prosjekter</li>
-                                <li>Modellering av arkitektoniske objekter</li>
-                                <li>Visualisering og animasjoner</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      </Helmet>
+      <div className="container">
+        <div className="col-left">
+          <div className="image-wrapper">
+            <img src={require('../images/gphoto2.jpeg')} />
+          </div>
+        </div>
+        <div className="col-right">
+          <h1>Arkitektur</h1>
+          <p>Vi bidrar i alle ledd i byggeprosessen og har lang erfaring med mulighetsstudier,
+            prosjektering av små og store bygg og videre oppfølging. Alle prosjekter og situasjoner
+            er ulike og arbeidet vårt har stort spenn i skala og omfang.
+          </p>
+          <div className="bottom-box">
+            <div className="col-left-list">
+              <ul>
+                <li>Konsepter</li>
+                <li>Offentlig og privat prosjekter</li>
+                <li>Interiørprosjekter</li>
+                <li>Industrielle prosjekter</li>
+                <li>Modellering av arkitektoniske objekter</li>
+                <li>Visualisering og animasjoner</li>
+              </ul>
             </div>
-        </Wrapper>
-    );
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  );
 };
 
 export default Arkitektur;
