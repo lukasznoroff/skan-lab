@@ -10,12 +10,12 @@ import Skanning from "./components/Skanning";
 import Landskap from "./components/Landskap";
 import Arkitektur from "./components/Arkitektur";
 import Bim from "./components/Bim";
-import { Helmet, HelmetProvider } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 
 function App() {
   return (
-    <HelmetProvider>
+    
     <div className="App">
       <GlobalStyle />
       <Helmet>
@@ -48,7 +48,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-    </HelmetProvider>
+   
   );
 }
 

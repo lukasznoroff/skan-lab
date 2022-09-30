@@ -1,9 +1,17 @@
 import React from 'react';
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 const Arkitektur = () => {
     return (
         <Wrapper>
+             <Helmet>
+        <title>Skan-lab | Arkitektur</title>
+        <meta
+          name="description"
+          content="Skan-LAB konsulent firma tilbyr oppmåling, byggstiking, vegstikking, masseberegning, 3D skanning, BIM, visualisering, landskap og arkitektoniske prosjektering."
+        />
+        </Helmet>
             <div className="container">
                 <div className="col-left">
                     <div className="image-wrapper">
