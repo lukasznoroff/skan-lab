@@ -1,28 +1,31 @@
-import {Link, NavLink, Outlet} from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import GridContainer from "../components/GridContainer";
 import styled from "styled-components";
 
 const Tjenester = () => {
-    return (
-        <>
-            <Container>
-                <GridContainer/>
-                <nav className="sub-link-menu">
-                    <NavLink className="sub-link" to="Skanning">3D-skannin og oppmåling</NavLink>
-                    <NavLink className="sub-link" to="Landskap">landskap</NavLink>
-                    <NavLink className="sub-link" to="Arkitektur">arkitektur</NavLink>
-                    <NavLink className="sub-link" to="Bim">BIM</NavLink>
-                </nav>
-                <Outlet/>
-            </Container>
-        </>
+  return (
+    <>
+      <Container>
+        <GridContainer />
+        <div className="navbar"></div>
+        <nav className="sub-link-menu">
+          <NavLink className="sub-link" to="Skanning">3D-skannin og oppmåling</NavLink>
+          <NavLink className="sub-link" to="Landskap">landskap</NavLink>
+          <NavLink className="sub-link" to="Arkitektur">arkitektur</NavLink>
+          <NavLink className="sub-link" to="Bim">BIM</NavLink>
+        </nav>
+        <Outlet />
+      </Container>
+    </>
 
-    );
+  );
 };
 
 export default Tjenester;
 
 const Container = styled.div`
+  
+
   .sub-link-menu {
     z-index: 999;
     //position: absolute;
@@ -43,15 +46,24 @@ const Container = styled.div`
     //height: 8.6vh;
     //z-index: 99999;
     //position: relative;
-    //background-color: rgba(188, 185, 185, 0.35);
     position: absolute;
+
+
+    position: fixed;
+    z-index: 99999;
     
     @media (max-width: 768px) {
-      top: 10%;
-      left: 10%;
+      top: 8%;
+      /* left: 10%; */
       z-index: 89;
-    }
+      background-color: #f7f5f5;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 2vw;
+      display: flex;
 
+    }
+    
     .sub-link {
       font-size: 14px;
       font-size: 12px;
@@ -61,6 +73,7 @@ const Container = styled.div`
       color: #c0c0c0;
       transition: color .3s ease-in-out;
       //margin-right: 1vw;
+      margin-top: 2px;
       &:last-child {
         padding-right: 33px;
       }
@@ -72,5 +85,15 @@ const Container = styled.div`
     a.active {
       color: #262626;
     }
+  }
+
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+
   }
 `;

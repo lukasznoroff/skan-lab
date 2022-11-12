@@ -1,32 +1,32 @@
 import styled from "styled-components";
 
 const Kontakt = () => {
-    return (
+  return (
 
-        <MapWrapper>
-            <div className="map">
-                <div className="google-map-code">
-                    <div className="mapouter">
-                        <div className="gmap_canvas">
-                            <iframe width="1820" height="600" id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=Stasjonsvegen%201,%202322%20Ridabu&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                    frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" style={{marginBottom:-5, width:"100%"}}></iframe>
-                        </div>
-                    </div>
-                </div>
+    <MapWrapper>
+      <div className="map">
+        <div className="google-map-code">
+          <div className="mapouter">
+            <div className="gmap_canvas">
+              <iframe width="1820" height="600" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Stasjonsvegen%201,%202322%20Ridabu&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" style={{ marginBottom: -5, width: "100%" }}></iframe>
             </div>
-            <div className="address-wrapper">
-                <ul>
-                <h1>Skan-LAB AS</h1>
-                    <li>Stasjonsvegen 1, 2322 Ridabu</li>
-                    <li>kontakt@skan-lab.no</li>
-                    <li>tel: 966 74 011</li>
-                </ul>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div className="address-wrapper">
+        <ul>
+          <h1>Skan-LAB AS</h1>
+          <li>Meirivegen 65, 2340 Løten</li>
+          <li>kontakt@skan-lab.no</li>
+          <li>tel: 966 74 011</li>
+        </ul>
+      </div>
 
-        </MapWrapper>
+    </MapWrapper>
 
-    );
+  );
 };
 
 export default Kontakt;

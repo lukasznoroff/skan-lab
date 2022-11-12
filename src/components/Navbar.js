@@ -1,70 +1,90 @@
 import React from "react";
 
-import {Link, NavLink, useLocation, useNavigate} from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "../images/logo-white.png";
 import LogoBlack from "../images/logo-black.png";
-import {useState} from "react";
+import { useState } from "react";
 
 import useMediaQuery from "../hooks/useMediaQuery";
 
 const Navbar = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
-    const [isOpen, setIsOpen] = useState(false);
-    const isDesktop = useMediaQuery('(max-width: 768px)');
-    function showSidebar(){
-        setIsOpen(!isOpen);
-        // e.ontouchstart.preventDefault()
-    }
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const isDesktop = useMediaQuery('(max-width: 768px)');
+  function showSidebar() {
+    setIsOpen(!isOpen);
+    // e.ontouchstart.preventDefault()
+  }
 
-    // React.useEffect(() => {
-    //     if (isDesktop) {
-    //         navigate('/Tjenester');
-    //     }else if(!isDesktop){
-    //         navigate("/")                      Adam september
-    //     }
-    // },[isDesktop, setIsOpen])
-
-
-    return (
+  // React.useEffect(() => {
+  //     if (isDesktop) {
+  //         navigate('/Tjenester');
+  //     }else if(!isDesktop){
+  //         navigate("/")                      Adam september
+  //     }
+  // },[isDesktop, setIsOpen])
 
 
-        <StyledNavbar style={{position: isOpen ? "fixed" : "fixed"}}
-            className={isOpen ? "bgc" : ""}
 
-        >
-        {/*{isDesktop ? StyledNavbar: null}*/}
-        {/*{isDesktop ? window.location.pathname === "/Tjenester" :  "/" }*/}
-        {/*{isDesktop ? navigate("/Tjenester") :  "/" }*/}
+  return (
 
-            <HamburgerWrapper isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}
-                              // className={!isOpen ? "scroll-on" : "scroll-off"}
-                          // style={{overflowY: isOpen ? "hidden" : ""}}
-            >
-                <div className="line1"></div>
-                <div className="line2"></div>
-                <div className="line3"></div>
-            </HamburgerWrapper>
-            <Link to="/">
-                <img className="logo" alt="logo" src={window.location.pathname === "/" ? LogoWhite : LogoBlack}/>
-            </Link>
-            <StyledNav  onClick={showSidebar} className={window.location.pathname === "/" ? "gradient" : ""}>
-                <StyledUl  isOpen={isOpen}>
-                    <NavLink to="tjenester">
-                        <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>tjenester
-                        </li>
-                    </NavLink>
-                    <NavLink to="omoss">
-                        <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>om oss</li>
-                    </NavLink>
-                    <NavLink to="kontakt">
-                        <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>kontakt</li>
-                    </NavLink>
-                </StyledUl>
-            </StyledNav>
-        </StyledNavbar>
-    );
+
+    <StyledNavbar style={{ position: isOpen ? "fixed" : "fixed" }}
+      className={isOpen ? "bgc" : "" && (window.location.pathname) === "/tjenester" ? "nav-white-bg" : ""}>
+
+
+
+      {(isDesktop && window.location.pathname === "/") || (isDesktop && window.location.pathname === "/omoss")
+        || (isDesktop && window.location.pathname === "/kontakt") || (isDesktop && window.location.pathname ===
+          "/tjenester") || (isDesktop && window.location.pathname ===
+            "/tjenester/Arkitektur")
+
+        ?
+        (<img className="logo2" alt="logo" src={LogoBlack} />) : ''}
+
+      {(isDesktop && window.location.pathname ===
+        "/tjenester/Bim") ? (<img className="logo2" alt="logo" src={LogoBlack} />) : ''}
+
+          {(isDesktop && window.location.pathname ===
+        "/tjenester/Landskap") ? (<img className="logo2" alt="logo" src={LogoBlack} />) : ''}
+
+{(isDesktop && window.location.pathname ===
+        "/tjenester/Skanning") ? (<img className="logo2" alt="logo" src={LogoBlack} />) : ''}
+
+
+      {/*{isDesktop ? StyledNavbar: null}*/}
+      {/*{isDesktop ? window.location.pathname === "/Tjenester" :  "/" }*/}
+      {/*{isDesktop ? navigate("/Tjenester") :  "/" }*/}
+
+      <HamburgerWrapper isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}
+      // className={!isOpen ? "scroll-on" : "scroll-off"}
+      // style={{overflowY: isOpen ? "hidden" : ""}}
+      >
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </HamburgerWrapper>
+      <Link to="/">
+        <img className="logo" alt="logo" src={window.location.pathname === "/" ? LogoWhite : LogoBlack} />
+      </Link>
+      <StyledNav onClick={showSidebar} className={window.location.pathname === "/" ? "gradient" : ""}>
+        <StyledUl isOpen={isOpen}>
+          <NavLink to="tjenester">
+            <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>tjenester
+            </li>
+          </NavLink>
+          <NavLink to="omoss">
+            <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>om oss</li>
+          </NavLink>
+          <NavLink to="kontakt">
+            <li className={window.location.pathname === "/" ? "white-link nav-link" : "dark-link nav-link"}>kontakt</li>
+          </NavLink>
+        </StyledUl>
+      </StyledNav>
+    </StyledNavbar>
+  );
 };
 
 
@@ -85,6 +105,9 @@ const StyledNavbar = styled.div`
   z-index: 999;
   margin: 0 auto;
   padding-right: 33px;
+  /* background-color: #fff; */
+
+
   img {
     width: 100px;
     height: 100px;
@@ -111,7 +134,8 @@ const StyledNavbar = styled.div`
     //left: 0;top: 0;
     /* background-color: #f7f5f5;             Adam september               */
     width: 100%;
-    
+    background-color: #f7f5f5;      
+
   }
 
   h1 {
@@ -128,7 +152,25 @@ const StyledNavbar = styled.div`
     z-index: 999999;
     position: relative;
     padding-left: 23px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
+
+
+  .logo2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 40%;
+    height: 40%;
+    z-index: 99999999;
+    position: relative;
+    padding-left: 23px;
+
+  }
+
+
   
 `;
 
@@ -147,7 +189,7 @@ const StyledNav = styled.nav`
   @media (max-width: 768px) {
     width: 100%;
     transition: transform ease-in-out 0.4s;
-    transform: translateX(${({isOpen}) => isOpen ? "0" : "-100%"});
+    transform: translateX(${({ isOpen }) => isOpen ? "0" : "-100%"});
     width: 100vw;
     position: absolute;
 
@@ -169,6 +211,7 @@ const StyledUl = styled.ul`
 
   a.active .nav-link {
     color: #262626;
+    /* margin-top: 20px; */
   }
 
   @media (max-width: 768px) {
@@ -179,13 +222,14 @@ const StyledUl = styled.ul`
     position: absolute;
     z-index: 9999;
     top: 5vh;
+    top: 6vh;
     transition: transform 0.5s ease-in-out;
-    transform: ${({hamburger}) => hamburger ? "translateX(5%)" : "translateX(100%)"};
-    transform: translateX(${({isOpen}) => isOpen ? "100%" : "-100%"});
+    transform: ${({ hamburger }) => hamburger ? "translateX(5%)" : "translateX(100%)"};
+    transform: translateX(${({ isOpen }) => isOpen ? "100%" : "-100%"});
     background-color: #f7f5f5;
     width: 100%;
     height: 100vh;
-    top: 0;
+    /* top: 0; */
     left: 0;
     width: 100%;
     height: 100%;
@@ -204,8 +248,11 @@ const StyledUl = styled.ul`
   }
 
   .white-link, .dark-link {
-    color: #fff;
+    /* color: #fff; */
+    color: #c0c0c0;
     text-transform: lowercase;
+    @media (max-width: 768px) {
+      color: #000;
   }
 
   .dark-link {
@@ -219,7 +266,7 @@ const StyledUl = styled.ul`
     &:hover {
       color: #262626;
     }
-
+  }
     @media (max-width: 768px) {
       padding-bottom: 30px;
       margin: 20px;
@@ -252,12 +299,12 @@ const HamburgerWrapper = styled.div`
     transform-origin: 6px center;
   }
   .line1 {
-    transform: ${({isOpen})=> isOpen ? "rotate(45deg)" : 0};
+    transform: ${({ isOpen }) => isOpen ? "rotate(45deg)" : 0};
   }
   .line2 {
     opacity: ${({ isOpen }) => isOpen ? '0' : '1'};
   }
   .line3 {
-    transform: ${({isOpen})=> isOpen ? "rotate(-45deg)" : 0};
+    transform: ${({ isOpen }) => isOpen ? "rotate(-45deg)" : 0};
   }
 `;

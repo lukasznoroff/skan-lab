@@ -120,12 +120,17 @@ const Wrapper = styled.div`
       font-size: .67vw;
       text-align: center;
       @media (max-width: 768px) {
-        font-size: 12px;
+        font-size: 13px;
       }
 
       .text-list {
-        font-size: 0.6vw
+        font-size: 0.6vw;
+        font-size: 10px;
+        @media (max-width: 768px) {
+        font-size: 10px;
       }
+      }
+      
 
       .first-text-item {
         font-weight: 800;
