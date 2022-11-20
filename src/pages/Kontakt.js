@@ -9,7 +9,8 @@ const Kontakt = () => {
           <div className="mapouter">
             <div className="gmap_canvas">
               <iframe width="1820" height="600" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Stasjonsvegen%201,%202322%20Ridabu&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                // src="https://maps.google.com/maps?q=Stasjonsvegen%201,%202322%20Ridabu&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.8853504243664!2d11.344686416424617!3d60.8260889822073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641fd6d41dcd669%3A0x63ea7bdfa78ebea9!2sMeierivegen%2065%2C%202340%20L%C3%B8ten!5e0!3m2!1sno!2sno!4v1668954568707!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" style={{ marginBottom: -5, width: "100%" }}></iframe>
             </div>
           </div>
